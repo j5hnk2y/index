@@ -28,6 +28,8 @@ a {
 }
 
 .nav{
+    z-index: 1;
+    position: relative;
     display: table-cell;
     vertical-align: middle;
     margin: 0px;
@@ -35,7 +37,6 @@ a {
 }
 
 nav ul{
-    display: table-cell
     position: relative;
     margin: 0px;
     padding: 0px;
@@ -43,12 +44,8 @@ nav ul{
 
 ul li{
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 30px;  
     margin-right: auto;
-}
-
-.main{
-    position: relative;
 }
 
 .outer {
@@ -61,12 +58,12 @@ ul li{
 }
 
 .middle {
+    position: relative;
     display: table-cell;
     vertical-align: middle;
 }
 
 .inner {
-    display: inherit;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -95,12 +92,34 @@ span.stretch {
 }
 
 @media (max-width: 700px) {
-
- .content img{
-    display: flex;
-    float: left;
-    width: 100%;
-    height: auto;
+    
+    .nav{
+    z-index: 1;
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    margin: 0px;
+    text-align: left;
 }
 
+    ul li{
+    margin-left: 0px;  
+}
+    
+    .middle{
+    display: block;
+}
+    
+    .content{
+    margin-bottom: 40px;
+    }
+    
+ .content img{
+    display: table-cell;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: auto;
+}
+    
 }
