@@ -214,8 +214,7 @@ bio{
 }
     
 .vimeo iframe{
-    display: table-cell;
-    position: relative;
+    position: fixed;
     width: 100%;
     height: 100%;
 }
