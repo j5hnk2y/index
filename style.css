@@ -6,11 +6,10 @@ html {
 }
 
 body {
-    font-family: helvetica;
+    font-family: Helvetica;
     font-weight: 900;
     color: darkslategray;
     font-size: 2rem;
-    
     margin: 0;
     padding: 0;
     width: 100%;
@@ -29,6 +28,7 @@ a {
 
 .nav{
     z-index: 1;
+    width: 300px;
     position: relative;
     display: table-cell;
     vertical-align: middle;
@@ -44,8 +44,12 @@ nav ul{
 
 ul li{
     display: inline-block;
-    margin-left: 30px;  
+    margin-left: 0px;  
     margin-right: auto;
+}
+
+ul li:hover{
+    color: rosybrown;
 }
 
 .outer {
@@ -53,25 +57,74 @@ ul li{
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 96%;
+    width: 80%
 }
 
-.middle {
-    position: relative;
+.middle{
     display: table-cell;
+    position: relative;
     vertical-align: middle;
-}
-
-.inner {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+}
+
+.inner{
+}
+
+.content{
+}
+
+.content2 img{
 }
 
 .content img{
     width: 30%;
-    height: auto;
+    height: 50%;
+}
+
+bio{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    display: inline-block;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: right;
+    word-break: normal;
+}
+
+.vimeo{
+    padding: 56.25% 0 0 0;
+    position: relative;
+}
+    
+.vimeo iframe{
+    position: absolute;
+    top: 0;;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact a{
+    font-size: 30px;
+    font-family: helvetica;
+    font-weight: 900;
+    color: darkgray;
+    text-decoration-line: none;
+    display: block;
+    text-align: center;
+}
+
+.mobilecontact{
+    display: none;
 }
 
 span.stretch {
@@ -85,36 +138,54 @@ span.stretch {
 
 .footer {
     font-size: 15px;
-    font-weight: 900;
+    font-weight: 400;
 	width: 100%;
 	position: fixed;
 	bottom: 10px;
 }
 
+
+
 @media (max-width: 700px) {
     
-    .nav{
+.outer{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 90%;
+    height: 90%;
+    }
+    
+.nav{
     z-index: 1;
     position: relative;
-    display: block;
+    display: table;
     vertical-align: middle;
     margin: 0px;
     text-align: left;
+    line-height: 1;
 }
 
-    ul li{
+ul li{
     margin-left: 0px;  
 }
     
-    .middle{
-    display: block;
+.middle{
+    display: table;
+    margin: auto;
+    height: 77%;
 }
     
-    .content{
-    margin-bottom: 40px;
-    }
+.inner{
+    display: table-cell;
+    vertical-align: middle;
+}
     
- .content img{
+.content{
+}
+    
+.content img{
     display: table-cell;
     margin-left: auto;
     margin-right: auto;
@@ -122,4 +193,34 @@ span.stretch {
     height: auto;
 }
     
+.contact a{
+    text-align: cneter;
+    margin-left: 0px;
+    }
+    
+.mobilecontact{
+    display: block;
+}
+    
+bio{
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+}
+    
+.vimeo{
+    padding: 56.25% 0 0 0;
+    position: fixed;
+}
+    
+.vimeo iframe{
+    transform: rotate(90deg);
+    position: fixed;
+    top: 40%;
+    left: -30%;
+    width: 160%;
+    height: 40%;
 }
