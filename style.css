@@ -79,12 +79,12 @@ ul li:hover{
 .content{
 }
 
-.content2 img{
+.content img{
+    height: 50vh;
 }
 
-.content img{
-    width: 30%;
-    height: 50%;
+.index img{
+    width: 100%;
 }
 
 bio{
@@ -92,11 +92,11 @@ bio{
     font-size: 18px;
     font-weight: 300;
     display: inline-block;
-    padding-top: 125px;
-    padding-bottom: 125px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 5px;
-    text-align: right;
+    text-align: center;
     word-break: normal;
 }
 
@@ -181,31 +181,28 @@ ul li{
     vertical-align: middle;
 }
     
-.content{
-}
+.index img{
+    display: table-cell;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    }
     
 .content img{
     display: table-cell;
     margin-left: auto;
     margin-right: auto;
-    width: 85%;
+    width: 100%;
     height: auto;
 }
     
-.contact a{
-    margin-left: 0px;
-    }
-    
-.mobile{
-    display: block;
-}
-    
 bio{
-    font-size: 16px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
     text-align: left;
 }
     
@@ -217,4 +214,12 @@ bio{
     position: fixed;
     width: 100%;
     height: 100%;
+}
+    
+.contact a{
+    margin-left: 0px;
+    }
+    
+.mobile{
+    display: block;
 }
