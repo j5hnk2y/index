@@ -1,0 +1,189 @@
+html{
+    margin: 0;
+    padding: 0; 
+    text-align: center;
+}
+
+body{ 
+    background-color: #FFFFE0;
+    font-family: Helvetica;
+    font-weight: 900;
+    color: darkslategray;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header{
+    position: relative;
+    padding: 0px;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 96%;
+    width: 80%
+}
+
+.middle{
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner{
+}
+
+
+.content img{
+    height: 50vh;
+}
+
+.index img{
+    width: 100%;
+}
+
+bio{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    word-break: normal;
+}
+
+.video_contain{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.vimeo{
+    padding: 56.25% 0 0 0;
+    position: relative;
+}
+    
+.vimeo iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+span.stretch {
+    display: inline-block;
+    -webkit-transform:scale(1.2,1);
+    -moz-transform:scale(1.2,1);
+    -ms-transform:scale(1.2,1); 
+    -o-transform:scale(1.2,1); 
+    transform:scale(1.2,1);
+}
+
+.footer {
+    font-size: 15px;
+    font-weight: 400;
+	width: 100%;
+	position: fixed;
+	bottom: 10px;
+}
+
+
+
+@media (max-width: 700px) {
+    
+.outer{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 90%;
+    height: 90%;
+    }
+    
+.middle{
+    display: table;
+    margin: auto;
+    height: 77%;
+}
+    
+.inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+    
+.index img{
+    display: table-cell;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    }
+    
+.content img{
+    display: table-cell;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+    
+bio{
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left;
+}
+    
+video{
+    transform: scale(3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+    
+.vimeo{
+    padding: 0;
+}
+    
+.vimeo iframe{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
