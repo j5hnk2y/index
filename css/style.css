@@ -2,11 +2,16 @@ html{
 }
 
 body{
-    background-color: white;
+    background-color: black;
     font-weight: 100;
     font-family: dotum;
-    color: black;
+    color: white;
     font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+a{
+    color: white;  
 }
 
 .n-d{
@@ -20,14 +25,20 @@ body{
     height: 100vh;
     text-align: center;
 }
-.wrapper:before {
-    content: ""; display: inline-block;
-    width: 1px; height: 100%;
+.wrapper:before{
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 100%;
     margin-right: 0; vertical-align: middle;
 }
-.box {
-    display: inline-block; vertical-align: middle;
+.box{
+    display: inline-block;
+    vertical-align: middle;
 }
 
 @media (max-width: 700px) {
     
+body{
+    background-color: black;
+    }
